@@ -137,7 +137,7 @@
 | Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
 | Fecha 02/03/2022 
   
-  
+___
   
 | Caso de Uso |  Ver Lugar |  
 | ------------- | ------------- |
@@ -152,8 +152,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 |Caso de Uso | Ver Usuario | 
 | ------------- | ------------- |
@@ -168,8 +167,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 | Caso de Uso | Ver Evento | 
 | ------------- | ------------- |
@@ -184,8 +182,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 | Caso de Uso | Hacer Reseña | 
 | ------------- | ------------- |
@@ -200,8 +197,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 | Caso de Uso | Eliminar Reseña | 
 | ------------- | ------------- |
@@ -216,8 +212,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Caso de Uso | Ver reseñas |
 | ------------- | ------------- |
@@ -232,8 +227,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 | Casos de Uso | Solicitar Adición |
 | ------------- | ------------- |
@@ -248,8 +242,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |  
 | Fecha | 02/03/2022 |
   
-  
-  
+___
   
 | Casos de Uso | Ver solicitud |  
 | ------------- | ------------- |
@@ -264,8 +257,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Añadir Tienda | 
 | ------------- | ------------- |
@@ -280,8 +272,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |  
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Añadir Lugar |  
 | ------------- | ------------- |
@@ -296,8 +287,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |  
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Añadir Evento | 
 | ------------- | ------------- |
@@ -312,8 +302,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Eliminar Lugar |  
 | ------------- | ------------- |
@@ -328,8 +317,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 |  
   
-  
-  
+___
   
 | Casos de Uso | Eliminar Evento |  
 | ------------- | ------------- |
@@ -344,8 +332,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Eliminar Tienda | 
 | ------------- | ------------- |
@@ -360,8 +347,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Modificar Lugar |  
 | ------------- | ------------- |
@@ -376,8 +362,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
   
-  
-  
+___
   
 | Casos de Uso | Modificar Evento |  
 | ------------- | ------------- |
@@ -392,8 +377,7 @@
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
 
-  
-  
+___
   
 | Casos de Uso | Modificar Tienda | 
 | ------------- | ------------- |
@@ -407,3 +391,5 @@
 | Notas | --- | 
 | Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
 | Fecha | 02/03/2022 | 
+
+___
