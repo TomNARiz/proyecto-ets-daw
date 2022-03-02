@@ -142,111 +142,111 @@
 | Caso de Uso |  Ver Lugar |  
 | ------------- | ------------- |
 |Fuentes | --- |
-Actor Usuario 
-Descripción Se consulta un lugar 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Actor | Usuario | 
+| Descripción | Se consulta un lugar | 
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse | 
+| Post-Condiciones | --- |
+| Requerimientos | --- |
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
+| Fecha | 02/03/2022 |
   
   
   
   
-Caso de Uso Ver Usuario</b> 
+|Caso de Uso | Ver Usuario | 
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario 
-Descripción Ver el perfil de un usuario 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- | 
+| Actor | Usuario | 
+| Descripción | Ver el perfil de un usuario |
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse | 
+| Post-Condiciones | --- | 
+| Requerimientos | --- |
+| Notas | --- | 
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
+| Fecha | 02/03/2022 |
   
   
   
   
-Caso de Uso Ver Evento</b> 
+| Caso de Uso | Ver Evento | 
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario 
-Descripción Consultar un evento 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- |
+| Actor | Usuario | 
+| Descripción | Consultar un evento | 
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse | 
+| Post-Condiciones | --- |
+| Requerimientos | --- | 
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
+| Fecha | 02/03/2022 |
   
   
   
   
-Caso de Uso Hacer Reseña</b> 
+| Caso de Uso | Hacer Reseña | 
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario, Admin 
-Descripción Valorizan un evento, usuario, tienda o lugar.
-Flujo Básico --- 
-Pre-Condiciones El usuario debe identificarse previamente 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- |
+| Actor | Usuario, Admin | 
+| Descripción | Valorizan un evento, usuario, tienda o lugar. |
+| Flujo Básico | --- |
+| Pre-Condiciones | El usuario debe identificarse previamente | 
+| Post-Condiciones | --- |
+| Requerimientos | --- | 
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
+| Fecha | 02/03/2022 |
   
   
   
   
-Caso de Uso Eliminar Reseña</b> 
+| Caso de Uso | Eliminar Reseña | 
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario 
-Descripción Elimina una reseña realizada previamente 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- |
+| Actor | Usuario |
+| Descripción | Elimina una reseña realizada previamente |
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse | 
+| Post-Condiciones | --- |
+| Requerimientos | --- |
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |
+| Fecha | 02/03/2022 | 
   
   
   
   
-Caso de Uso Ver reseñas</b> 
+| Caso de Uso | Ver reseñas |
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario 
-Descripción Consulta reseñas de un evento, usuario, tienda o lugar. 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- | 
+| Actor | Usuario |
+| Descripción | Consulta reseñas de un evento, usuario, tienda o lugar. | 
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse 
+| Post-Condiciones | --- |
+| Requerimientos | --- | 
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera | 
+| Fecha | 02/03/2022 |
   
   
   
   
-Casos de Uso Solicitar Adición </b> 
+| Casos de Uso | Solicitar Adición |
 | ------------- | ------------- |
-Fuentes --- 
-Actor Usuario 
-Descripción Solicita que añadan un lugar, tienda o evento a la aplicación. 
-Flujo Básico --- 
-Pre-Condiciones Identificarse 
-Post-Condiciones --- 
-Requerimientos --- 
-Notas --- 
-Autor Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera 
-Fecha 02/03/2022 
+| Fuentes | --- |
+| Actor | Usuario | 
+| Descripción | Solicita que añadan un lugar, tienda o evento a la aplicación. |
+| Flujo Básico | --- |
+| Pre-Condiciones | Identificarse | 
+| Post-Condiciones | --- |
+| Requerimientos | --- | 
+| Notas | --- |
+| Autor | Tomás Nahuel Antela Rizzo & Victor Manuel Cabrera |  
+| Fecha | 02/03/2022 |
   
   
   
