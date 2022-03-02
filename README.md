@@ -123,7 +123,8 @@
 
 <h2> Casos de Uso </h2>
 
-  <b> Casos de Uso Ver Tienda</b> 
+  | Casos de Uso | Ver Tienda |
+  | ------------- | ------------- |
   Fuentes --- 
   Actor Usuario 
   Descripción Se consulta una tienda 
@@ -138,7 +139,7 @@
   
   
   <b> Casos de Uso Ver Lugar</b> 
-  Fuentes --- 
+  |Fuentes | --- |
   Actor Usuario 
   Descripción Se consulta un lugar 
   Flujo Básico --- 
