@@ -396,6 +396,7 @@
   
   
 | Casos de Uso | Modificar Tienda | 
+| ------------- | ------------- |
 | Fuentes | --- | 
 | Actor | Admin |  
 | Descripción | Modifica una tienda de la aplicación | 
