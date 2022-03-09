@@ -372,33 +372,48 @@ ___
 ## Cardinalidades <a name="id3"></a>
 
 
- Usuario-Tienda: Un usuario puede consultar 1 o N tiendas, mientras que cada tienda puede ser consultada por 1 o N usuarios.
+ ### Usuario-Tienda: 
+ Un usuario puede consultar 1 o N tiendas, mientras que cada tienda puede ser consultada por 1 o N usuarios.
 
- Usuario-Evento: Un usuario puede consultar 1 o N eventos, mientras que cada evento puede ser consultado por 1 o N usuarios.
+ ### Usuario-Evento: 
+ Un usuario puede consultar 1 o N eventos, mientras que cada evento puede ser consultado por 1 o N usuarios.
 
- Usuario-Lugares: Un usuario puede consultar 1 o N lugares, mientras que cada lugares puede ser consultado por 1 o N usuarios.
+ ### Usuario-Lugares: 
+ Un usuario puede consultar 1 o N lugares, mientras que cada lugares puede ser consultado por 1 o N usuarios.
 
- Usuario-Resenia: Un usuario puede no realizar ninguna reseña o hacer varias reseñas. Mientras que una reseña puede ser no realizada o realizada por varios usuarios.
+ ### Usuario-Resenia: 
+ Un usuario puede no realizar ninguna reseña o hacer varias reseñas. Mientras que una reseña puede ser no realizada o realizada por varios usuarios.
 
- Tienda-Resenia: Una tienda puede realizar 0 o N reseñas, y una tienda puede tener 0 o N reseñas.
+ ### Tienda-Resenia: 
+ Una tienda puede realizar 0 o N reseñas, y una tienda puede tener 0 o N reseñas.
 
- Tienda-Localizacion: Una tienda puede tener una o varias localizaciones. Mientras que estas localizaciones (locales) solo pueden pertenecer a una sola tienda.
+ ### Tienda-Localizacion: 
+ Una tienda puede tener una o varias localizaciones. Mientras que estas localizaciones (locales) solo pueden pertenecer a una sola tienda.
 
- Tienda-Horario: Una tienda puede tener uno o varios horarios, pero estos horarios solo pertenecen a esta tienda.
+ ### Tienda-Horario: 
+ Una tienda puede tener uno o varios horarios, pero estos horarios solo pertenecen a esta tienda.
 
- Tienda-Evento: Una tienda puede no realizar ningún evento o hacer todos los que quiera, pero estos eventos solo pueden pertenecer a dicha tienda.
+ ### Tienda-Evento: 
+ Una tienda puede no realizar ningún evento o hacer todos los que quiera, pero estos eventos solo pueden pertenecer a dicha tienda.
 	
- Evento-Localizacion: Un evento puede tener varias localizaciones, y esas localizaciones pueden tener varios eventos en el mismo lugar.
+ ### Evento-Localizacion: 
+ Un evento puede tener varias localizaciones, y esas localizaciones pueden tener varios eventos en el mismo lugar.
 
- Evento-Resenia: Un evento puede tener ninguna o varias reseñas.
+ ### Evento-Resenia: 
+ Un evento puede tener ninguna o varias reseñas.
 
- Evento-Horario: Un evento puede tener uno o varios horarios pero estos horarios solo pertenecen a dicho evento.
+### Evento-Horario: 
+ Un evento puede tener uno o varios horarios pero estos horarios solo pertenecen a dicho evento.
 
 
- Evento-Lugares: Un evento se puede realizar en un lugar o en varios, pero para hacer estos eventos en esos lugares, los lugares tienen que tener asignado el evento correspondiente.
+###  Evento-Lugares: 
+Un evento se puede realizar en un lugar o en varios, pero para hacer estos eventos en esos lugares, los lugares tienen que tener asignado el evento correspondiente.
 
- Lugares-Localización: Cada lugar tiene una sola localización.
+### Lugares-Localización: 
+ Cada lugar tiene una sola localización.
 
- Lugares-Horario: Un lugar puede tener varios horarios, pero estos horarios solo pertenecen a este lugar.
+### Lugares-Horario: 
+Un lugar puede tener varios horarios, pero estos horarios solo pertenecen a este lugar.
 
- Lugares-Resenia: Un lugar puede tener 0 o N reseñas, y se pueden realizar 0 o N reseñas a lugares.
+###  Lugares-Resenia: 
+Un lugar puede tener 0 o N reseñas, y se pueden realizar 0 o N reseñas a lugares.
