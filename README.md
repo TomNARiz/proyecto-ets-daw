@@ -26,6 +26,7 @@
   
   
 | Actor | Usuario | 
+| ------------- | ------------- |
 | Descripción | No tiene ningún tipo de poder fuera de solicitar algo al administrador. |
 | Características | --- |
 | Relaciones | Administrador |
