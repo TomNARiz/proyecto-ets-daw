@@ -11,7 +11,7 @@
   <artifactId>logica</artifactId>
 
 
-  <name>logica</name>
+  <name>${etiqueta-hijo} logica</name>
   <!-- FIXME change it to the project's website -->
   <url>${web}</url>
 

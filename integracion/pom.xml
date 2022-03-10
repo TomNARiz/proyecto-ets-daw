@@ -8,11 +8,12 @@
   </parent>
 
 
-  <artifactId>presentacion</artifactId>
+  <artifactId>integracion</artifactId>
+ 
 
-
-  <name>${etiqueta-hijo} presentacion</name>
+  <name>${etiqueta-hijo} integracion</name>
   <!-- FIXME change it to the project's website -->
-  <url>${web}</url>
+  <url>http://www.example.com</url>
+
 
 </project>
