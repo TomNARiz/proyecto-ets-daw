@@ -16,3 +16,7 @@ ___
 <img src="Imgs\indice.png">
 
   - [Funcionamiento](#id1)
+
+___
+
+<img src="Imgs\function.png"> <a name="id1"></a> 
