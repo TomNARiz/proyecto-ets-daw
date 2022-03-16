@@ -7,5 +7,5 @@ El usuario puede pedir para calcular las siguientes cosas:
    
    -Una lista de recursos necesarios apra subir un personaje/arma a nivel específico.
   
-El administrador tiene la capacidad de añadir nuevas armas, nuevos personajes, nuevos sets, etc etc.
+El administrador irá actualizando los personajes, armas, set de artefactos, etc.
 
