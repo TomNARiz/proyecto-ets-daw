@@ -19,7 +19,7 @@ ___
 
 ___
 
-<a src="https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento"><img src="Imgs\function.png"></a> <a name="id1"></a> 
+[<img src="Imgs\function.png">]("https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento") <a name="id1"></a> 
 
 
 ___
