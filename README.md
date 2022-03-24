@@ -1,7 +1,7 @@
 <div align="center">
 <img src="Imgs\logo.png">
 
-  <div align="justify">
+<div align="justify">
     
 ___
 
