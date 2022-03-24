@@ -21,6 +21,29 @@ ___
 
 [<img src="Imgs\function.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento) <a name="id1"></a> 
 
+___
+
+[<img src="Imgs\calcimpins.png ">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Instalaci%C3%B3n) <a name="id2"></a> 
 
 ___
 
+[<img src="Imgs\calcimpusua.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario) <a name="id2"></a> 
+
+___
+
+[<img src="Imgs\calcimpprog.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador) <a name="id3"></a>
+
+___
+
+
+[<img src="Imgs\casosuso.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Casos-de-uso) <a name="id2"></a> 
+
+___
+
+[<img src="Imgs\diagramaclases.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Diagrama-de-Clases) <a name="id3"></a>
+
+___
+
+[<img src="Imgs\calcimplicen.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento) <a name="id3"></a>
+
+___
