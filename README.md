@@ -18,13 +18,13 @@ Por lo tanto en nuestra aplicación queremos poder ayudar a esa gente realizando
   
 ___
 
-<img src="Imgs\indice.png">
+[<img src="Imgs\indice.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%C3%8Dndice)
 
-  - [Funcionamiento](#id1)
-  - [Manual de Usuario](#id2)
-  - [Manual de Programador](#id3)
-  - [Casos de Uso](#id4)
-  - [Diagrama de Clases](#id5)
+  - [Funcionamiento](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento)
+  - [Manual de Usuario](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario)
+  - [Manual de Programador](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador)
+  - [Casos de Uso](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Casos-de-uso)
+  - [Diagrama de Clases](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Diagrama-de-Clases)
   - [Licencia](#id6)
 
 ___
