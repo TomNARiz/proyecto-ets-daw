@@ -10,7 +10,7 @@ ___
 
 <img src="Imgs\index.png">
     
-Aqui podras encontrar la documentacion sobre la aplicacion Calc Impact.
+Aqui podras encontrar la documentacion sobre la aplicacion Calc Impact. Si desea ver informacion mas detallada sobre el proyecto pinche [aquí](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%C3%8Dndice)
 
   
 ___
