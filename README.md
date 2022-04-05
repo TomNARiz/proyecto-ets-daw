@@ -19,8 +19,8 @@ ___
 [<img src="Imgs\indice.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%C3%8Dndice)
 
   - [Functioning](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento)
-  - [User's Manual](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario)
-  - [Programmer's Manual](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador)
+  - [User's Handbook](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario)
+  - [Programmer's Handbook](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador)
   - [Case of use](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Casos-de-uso)
   - [Class's Diagrams](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Diagrama-de-Clases)
   - [License](#id6)
