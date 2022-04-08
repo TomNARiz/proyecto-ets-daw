@@ -2,7 +2,7 @@ package es.iespuerto.ets;
 
 /**
  * Esta clase almacena la equipacion de cada personaje, con su arma, artefactos y equipo.
- * @author Tomás Nahuel Antela Rizzo
+ * @author Tomas Nahuel Antela Rizzo
  * @version 1.0
  * @see Personaje
  * @see Armas

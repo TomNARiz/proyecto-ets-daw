@@ -2,7 +2,7 @@ package es.iespuerto.ets;
 
 /**
  * Esta clase almacena las armas con su estadisticas y pasivas
- * @author Tomás Nahuel Antela Rizzo
+ * @author Tomas Nahuel Antela Rizzo
  * @version 1.0
  * @see Pasiva
  * @see Recursos
@@ -129,5 +129,4 @@ public class Armas {
     public void setAscension(Recursos ascension) {
         this.ascension = ascension;
     }
-    
 }

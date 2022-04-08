@@ -2,7 +2,7 @@ package es.iespuerto.ets;
 
 /**
  * Esta clase almacena las pasivas de distintas armas
- * @author Tomás Nahuel Antela Rizzo
+ * @author Tomas Nahuel Antela Rizzo
  */
 public class Pasiva {
     private String nombre, descripcion, bono;

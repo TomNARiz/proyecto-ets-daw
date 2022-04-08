@@ -2,7 +2,7 @@ package es.iespuerto.ets;
 
 /**
  * Esta clase almacena recursos, sus localizaciones y ademas de que enemigos las sueltan
- * @author Tomás Nahuel Antela Rizzo
+ * @author Tomas Nahuel Antela Rizzo
  */
 public class Recursos {
     private String objeto, localizacion, enemigo;

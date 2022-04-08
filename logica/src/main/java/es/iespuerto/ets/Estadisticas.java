@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Esta clase almacena las estadisticas base de un personaje
- * @author Victor Manuel Cabrera Abreu
+ * @author Victor Manuel Cabrera Abreu 
  */
 public class Estadisticas {
     private Integer vidabase, atqbase, defbase, maestria;
