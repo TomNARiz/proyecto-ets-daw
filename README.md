@@ -9,7 +9,7 @@
 ___
 # English
 
-<img src="Imgs\index.png">
+<img src="Imgs\index_eng.png">
     
 Here you can find the documentation about the app Calc Impact. If you want to see more details about the project click [here](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%C3%8Dndice)
 
@@ -27,20 +27,20 @@ ___
 
 ___
 
-[<img src="Imgs\function.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento) <a name="id1"></a> 
+[<img src="Imgs\function_eng.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Funcionamiento) <a name="id1"></a> 
     
 Here we explain you, what will consist the app Calc Impact and some basic aspects of the game for the knowledge of the program
 
 
 ___
 
-[<img src="Imgs\calcimpusua.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario) <a name="id2"></a> 
+[<img src="Imgs\calcimpusua_eng.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Usuario) <a name="id2"></a> 
 
 The manual of the app orientated to the user which contains the basic functioning for the menus of the app.
 
 ___
 
-[<img src="Imgs\calcimpprog.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador) <a name="id3"></a>
+[<img src="Imgs\calcimpprog_eng.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Manual-de-Programador) <a name="id3"></a>
     
 
 The manual of the app orientated to the programmer which contains the knowledge of the program to guide the programmer.
@@ -48,20 +48,20 @@ The manual of the app orientated to the programmer which contains the knowledge 
 ___
 
 
-[<img src="Imgs\casosuso.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Casos-de-uso) <a name="id4"></a> 
+[<img src="Imgs\casosuso_eng.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Casos-de-uso) <a name="id4"></a> 
     
 The representation of a list of steps that define the interacction between the user and the app.
 
 ___
 
-[<img src="Imgs\diagramaclases.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Diagrama-de-Clases) <a name="id5"></a>
+[<img src="Imgs\diagramaclases_eng.png">](https://github.com/Tomhuel/proyecto-ets-daw/wiki/Diagrama-de-Clases) <a name="id5"></a>
     
 The structure of the elements that compose the application's system and It defines the classes that will use when the project goes to the phase of construction and the way that are related themselves
 
 
 ___
 
-[<img src="Imgs\calcimplicen.png">]() <a name="id6"></a>
+[<img src="Imgs\calcimplicen_eng.png">]() <a name="id6"></a>
     
 ___
 
