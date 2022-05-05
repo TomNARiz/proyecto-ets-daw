@@ -15,7 +15,7 @@ Calc Impact is an app related to the popular cross-platform game Genshin Impact.
     
 ¡We hope that Calc Impact will be a great tool for your experience and your characters!
     
-To get more info, go to [Wiki](https://github.com/Tomhuel/proyecto-ets-daw/wiki)
+To get more info, go to [Wiki](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%F0%9F%87%AC%F0%9F%87%A7-Home)
 ___
     
 # Español
@@ -26,5 +26,5 @@ Calc Impact es una aplicación relacionada con el popular juego multiplataformas
     
 ¡Esperamos que Calc Impact sea una gran herramienta para tu experiencia y tus personajes!
     
-Para más información acceda a la [Wiki](https://github.com/Tomhuel/proyecto-ets-daw/wiki)
+Para más información acceda a la [Wiki](https://github.com/Tomhuel/proyecto-ets-daw/wiki/%F0%9F%87%AA%F0%9F%87%B8-Home)
 </div>
