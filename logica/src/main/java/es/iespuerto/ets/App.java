@@ -40,7 +40,9 @@ public class App {
                     String personaje = teclado.nextLine();
                     for (int i = 0; i < listaPersonajes.personajes.size(); i++) {
                         Personaje personajeDeLaLista = listaPersonajes.personajes.get(i);
+
                         if (personajeDeLaLista.getNombre().equals(personaje)) {
+                            /** 
                             System.out.printf(
                                     "Nombre: %s %n Elemento: %s %n Estadísticas: %n Vida: %d %n Ataque: %d %n Defensa: %d %n Maestria Elemental: %d %n Recarga de Energia: %d %n Probabilidad de Critico: %d %n Daño Critico: %d %n Bono Elemental: %d %n",
                                     personajeDeLaLista.getNombre(), personajeDeLaLista.getElemento(),
@@ -52,6 +54,7 @@ public class App {
                                     personajeDeLaLista.getEstadisticas().getProbCrit(),
                                     personajeDeLaLista.getEstadisticas().getDnCrit(),
                                     personajeDeLaLista.getEstadisticas().getBonoelemnt());
+                                    */
 
                         }
 

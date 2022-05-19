@@ -255,7 +255,7 @@ public class Estadisticas {
         String linea;
         String[] palabrasLinea;
         Scanner bdEstadisticas = new Scanner(new File(
-                "/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpact/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Estadisticas.txt"));
+                "H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Estadisticas.txt"));
         bdEstadisticas.nextLine();
         while (bdEstadisticas.hasNextLine()) {
             linea = bdEstadisticas.nextLine();

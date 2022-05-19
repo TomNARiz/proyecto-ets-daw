@@ -17,8 +17,8 @@ public class Personaje {
     private String nombre;
     private String elemento;
     private Integer estadisticas;
-    private Integer[] pasivas;
-    private Integer[] ascension;
+    private Integer[] pasivas=new Integer[3];
+    private Integer[] ascension=new Integer[4];
 
     /**
      * Metodo constructor vacio
@@ -160,7 +160,7 @@ public class Personaje {
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        try (Scanner bdPersonajes = new Scanner(new File(""));) {
+        Scanner bdPersonajes = new Scanner(new File("H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Personajes.txt"));
             while (bdPersonajes.hasNextLine()) {
                 linea = bdPersonajes.nextLine();
                 palabrasLinea = linea.split(";");
@@ -174,10 +174,7 @@ public class Personaje {
                         ascensionPj);
                 personajes.add(datos);
             }
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
+            bdPersonajes.close();
     }
 
 }

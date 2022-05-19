@@ -1,30 +1,22 @@
 package es.iespuerto.ets;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import java.io.*;
+import java.util.*;
+import org.junit.jupiter.api.*;
 
 public class EstadisticasTest {
     Estadisticas testeo = null;
+    List<Estadisticas> testLista2 = new ArrayList<>();
+    List<Estadisticas> testLista1 = new ArrayList<>();
 
     @BeforeEach
     public void beforeEach() throws FileNotFoundException  {
         testeo = new Estadisticas(1, 13226, 251, 876, 0, 100.0, 5.0, 50.0, 28.0, 1);
-       /** 
-        List<Estadisticas> testLista = new ArrayList<>();
         String linea;
         String[] palabrasLinea;
         Scanner bdEstadisticas = new Scanner(new File(
-                "/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpact/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Estadisticas.txt"));
+                "H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Estadisticas.txt"));
         bdEstadisticas.nextLine();
         while (bdEstadisticas.hasNextLine()) {
             linea = bdEstadisticas.nextLine();
@@ -42,21 +34,21 @@ public class EstadisticasTest {
             Integer idPersonaje = Integer.parseInt(palabrasLinea[9]);
             Estadisticas datos = new Estadisticas(id, vida, ataque, defensa, maestriaElemental, recargaEnergia,
                     probabilidadCrit, danioCrit, bonoElemental, idPersonaje);
-            testLista.add(datos);
+            testLista1.add(datos);
+            testLista2.add(datos);
         }
         bdEstadisticas.close();
-        */
     }
 
     @Test
     public void testGetEstadisticas() {
-        assertEquals(testeo, testeo.getEstadisticas(1));
+        Estadisticas testeoEstats=testeo.getEstadisticas(1);
+        assertEquals(testeoEstats, testeo.getEstadisticas(1));
     }
 
     @Test
     public void testLeerDatos() {
-        Exception exepcion1 = assertThrows(FileNotFoundException.class, () -> testeo.leerDatos());
-        assertTrue(exepcion1.getMessage().contains("s"));
+        assertEquals(testLista1.size(),testLista2.size());
     }
 
     @Test

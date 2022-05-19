@@ -202,7 +202,7 @@ public class Armas {
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        try (Scanner bdArmas = new Scanner(new File(""));) {
+        Scanner bdArmas = new Scanner(new File(""));
             while (bdArmas.hasNextLine()) {
                 linea = bdArmas.nextLine();
                 palabrasLinea = linea.split(";");
@@ -214,10 +214,7 @@ public class Armas {
                 Armas datos = new Armas(id, palabrasLinea[1], atq, palabrasLinea[3], subestat, pasivas, recursos);
                 arma.add(datos);
             }
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
+            bdArmas.close();
     }
 
 }
