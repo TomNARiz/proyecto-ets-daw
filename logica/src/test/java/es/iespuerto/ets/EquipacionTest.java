@@ -39,4 +39,25 @@ public class EquipacionTest {
         assertEquals(pj, testeo.getPersonaje());
     }
 
+    @Test
+    void testSetPersonaje() {
+        pj = new Personaje(1, "Gustavo", "Pyro", 1, pasivas, recursos);
+        testeo.setPersonaje(pj);
+        assertEquals(pj, testeo.getPersonaje());
+    }
+
+    @Test
+    void testSetArma() {
+        arma=new Armas(1,"Espada Blanca",454,"ATQ",69.0,1, testAscension);
+        testeo.setArma(arma);
+        assertEquals(arma, testeo.getArma());
+    }
+
+    void testSetArtefacto() {
+        artefacto=new Artefactos(2,"Emblema","Mazmorra Abisal", "+20% Recarga", "Bono de danio Equivalente al 25% de Recarga", 46.6);
+        testeo.setArtefactos(artefacto);
+        assertEquals(artefacto, testeo.getArtefactos());
+    }
+
+
 }
