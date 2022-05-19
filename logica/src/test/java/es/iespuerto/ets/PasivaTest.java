@@ -1,15 +1,13 @@
 package es.iespuerto.ets;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
 public class PasivaTest {
     Pasiva tPasiva=null;
 
 
-    @Before
+    @BeforeEach
     public void BeforeEach(){
         tPasiva=new Pasiva("Uno", "Dos", "Tres");
     }

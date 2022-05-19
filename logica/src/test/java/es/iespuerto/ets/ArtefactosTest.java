@@ -1,18 +1,14 @@
 package es.iespuerto.ets;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.Set;
-
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
 public class ArtefactosTest {
     Artefactos tArtefactos=null;
 
-    @Before
+    @BeforeEach
     public void BeforeEach(){
-        tArtefactos=new Artefactos("Emblema", "+20% Recarga", "Bono de danio Equivalente al 25% de Recarga", 46.6);
+        tArtefactos=new Artefactos(1,"Emblema","Mazmorra Abisal", "+20% Recarga", "Bono de danio Equivalente al 25% de Recarga", 46.6);
     }
 
     @Test
@@ -32,7 +28,7 @@ public class ArtefactosTest {
 
     @Test
     public void testGetPasiva4() {
-        assertEquals("Bono de danio Equivalente al 25% de Recarga", tArtefactos.getPasiva4()());
+        assertEquals("Bono de danio Equivalente al 25% de Recarga", tArtefactos.getPasiva4());
     }
 
     @Test
