@@ -1,36 +1,71 @@
 package es.iespuerto.ets;
 
+import java.io.*;
+import java.util.*;
 
 /**
  * Esta clase almacena los artefactos e informacion de ellos
+ * 
  * @author Victor Manuel Cabrera Abreu
  */
 public class Artefactos {
-    private String nombre, localizacion, pasiva2, pasiva4;
+    private List<Artefactos> artefacto = new ArrayList<>();
+    private String nombre;
+    private String localizacion;
+    private Integer codigo;
+    private String pasiva2;
+    private String pasiva4;
     private Double estatbase;
-    private Double [][] subestadistica;
+
+    /**
+     * Metodo constructor vacio
+     */
+    public Artefactos(){
+
+    }
 
     /**
      * Metodo constructor parametrizador
-     * @param nombre Nombre del conjunto de artefactos
-     * @param localizacion Localizacion de los artefactos
-     * @param pasiva2 Pasiva de 2 piezas de los artefactos
-     * @param pasiva4 Pasiva de 4 piezas de los artefactos
-     * @param estatbase Estat base de cada artefacto
+     * 
+     * @param codigo         ID del conjunto de artefactos
+     * @param nombre         Nombre del conjunto de artefactos
+     * @param localizacion   Localizacion de los artefactos
+     * @param pasiva2        Pasiva de 2 piezas de los artefactos
+     * @param pasiva4        Pasiva de 4 piezas de los artefactos
+     * @param estatbase      Estat base de cada artefacto
      * @param subestadistica Subestadisticas de los artefactos
      */
-    public Artefactos(String nombre, String localizacion, String pasiva2, String pasiva4, Double estatbase,
-            Double [][] subestadistica) {
+    public Artefactos(Integer codigo, String nombre, String localizacion, String pasiva2, String pasiva4,
+            Double estatbase) {
+        this.codigo = codigo;
         this.nombre = nombre;
         this.localizacion = localizacion;
         this.pasiva2 = pasiva2;
         this.pasiva4 = pasiva4;
         this.estatbase = estatbase;
-        this.subestadistica = subestadistica;
+    }
+
+    /**
+     * Metodo que regresa el ID de los artefactos
+     * 
+     * @return Regresa el ID
+     */
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    /**
+     * Metodo que establece el ID de los artefactos
+     * 
+     * @param codigo ID
+     */
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
     }
 
     /**
      * Metodo que regresa el nombre de los artefactos
+     * 
      * @return Regresa el nombre
      */
     public String getNombre() {
@@ -39,6 +74,7 @@ public class Artefactos {
 
     /**
      * Metodo que establece el nombre de los artefactos
+     * 
      * @param nombre Nombre
      */
     public void setNombre(String nombre) {
@@ -47,6 +83,7 @@ public class Artefactos {
 
     /**
      * Metodo que regresa la localizacion de los artefactos
+     * 
      * @return Regresa la localizacion
      */
     public String getLocalizacion() {
@@ -55,6 +92,7 @@ public class Artefactos {
 
     /**
      * Metodo que establece la localizacion de los artefacos
+     * 
      * @param localizacion Localizacion
      */
     public void setLocalizacion(String localizacion) {
@@ -63,6 +101,7 @@ public class Artefactos {
 
     /**
      * Metodo que regresa la pasiva de 2 piezas de los artefactos
+     * 
      * @return Regresa la pasiva
      */
     public String getPasiva2() {
@@ -71,6 +110,7 @@ public class Artefactos {
 
     /**
      * Metodo que establece la pasiva de 2 piezas de los artefactos
+     * 
      * @param pasiva2 Pasiva de 2 piezas
      */
     public void setPasiva2(String pasiva2) {
@@ -79,6 +119,7 @@ public class Artefactos {
 
     /**
      * Metodo que regresa la pasiva de 4 piezas de los artefactos
+     * 
      * @return Regresa la pasiva
      */
     public String getPasiva4() {
@@ -87,6 +128,7 @@ public class Artefactos {
 
     /**
      * Metodo que establece la pasiva de 4 piezas de los artefactos
+     * 
      * @param pasiva4 Pasiva de 4 piezas
      */
     public void setPasiva4(String pasiva4) {
@@ -95,6 +137,7 @@ public class Artefactos {
 
     /**
      * Metodo que regresa la estat base de los artefactos
+     * 
      * @return Regresa la estat base
      */
     public Double getEstatbase() {
@@ -103,6 +146,7 @@ public class Artefactos {
 
     /**
      * Metodo que establece la estat base de los artefactos
+     * 
      * @param estatbase Estat base
      */
     public void setEstatbase(Double estatbase) {
@@ -110,19 +154,25 @@ public class Artefactos {
     }
 
     /**
-     * Metodo que regresa las subestadisticas de los artefactos
-     * @return Regresa las subestadisticas
+     * Metodo que lee y aniade la base de datos de armas mediante un fichero.
      */
-    public Double [][] getSubestadistica() {
-        return subestadistica;
-    }
+    public void leerDatos() throws FileNotFoundException {
+        String linea;
+        String[] palabrasLinea;
+        try (Scanner bdArtefactos = new Scanner(new File(""));) {
+            while (bdArtefactos.hasNextLine()) {
+                linea = bdArtefactos.nextLine();
+                palabrasLinea = linea.split(";");
+                Integer id = Integer.parseInt(palabrasLinea[0]);
+                double statbase = Double.parseDouble(palabrasLinea[5]);
+                Artefactos datos = new Artefactos(id, palabrasLinea[1], palabrasLinea[2], palabrasLinea[3], palabrasLinea[4],
+                        statbase);
+                artefacto.add(datos);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
 
-    /**
-     * Metodo que establece las subestadisticas de los artefactos
-     * @param subestadistica Subestadisticas
-     */
-    public void setSubestadistica(Double [][] subestadistica) {
-        this.subestadistica = subestadistica;
     }
 
 }

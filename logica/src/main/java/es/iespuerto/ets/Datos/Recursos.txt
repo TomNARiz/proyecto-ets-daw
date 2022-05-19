@@ -1,0 +1,50 @@
+1;NULL;Grilletes de Diente de Leon;Cadena de Diente de Leon;Esposas de Diente de Leon;Ideales de Diente de Leon;NULL
+2;NULL;Diente de leche de lobo boreal;Diente roto de lobo boreal;Colmillo roto de lobo boreal;Nostalgia del lobo boreal;NULL
+3;NULL;Fragmento de azulejo de Decarabian;Escombro de la ciudad de Decarabian;Fragmento de epopeya de Decarabian;Fragmento de Suenio de Decarabian;NULL
+4;NULL;Arena brillante de Guyun;Piedra reluciente de Guyun;Reliquia de Guyun;Cuerpo divino de Guyun;NULL
+5;NULL;Perdigones de plomo;Perdigones de mercurio;Perdigones de oro;Perdigones primordiales;NULL
+6;NULL;Grano de siderita oscura;Lamina de siderita oscura;Fragmento de siderita oscura;Trozo de siderita oscura;NULL
+7;NULL;Rama de coral del mar distante;Rama enjoyada del mar distante;Rama de jade del mar distante;Rama dorada del mar distante;NULL
+8;NULL;Sabiduria de Narukami;Jubilo de Narukami;Afecto de Narukami;Valentia de Narukami;NULL
+9;NULL;Mascara del teniente maligno;Mascara del mordisco de tigre;Mascara del cuerno;Mascara fantasmagorica;NULL
+10;NULL;Ensenianzas de la libertad;Guia de la libertad;Filosofia de la libertad;NULL;NULL
+11;NULL;Ensenianzas de la resistencia;Guia de la resistencia;Filosofia de la resistencia;NULL;NULL
+12;NULL;Ensenianzas de la poesia;Guia de la poesia;Filosofia de la poesia;NULL;NULL
+13;NULL;Ensenianzas de la prosperidad;Guia de la prosperidad;Filosofia de la prosperidad;NULL;NULL
+14;NULL;Ensenianzas del esfuerzo;Guia del esfuerzo;Filosofia del esfuerzo;NULL;NULL
+15;NULL;Ensenianzas del oro;Guia del oro;Filosofia del oro;NULL;NULL
+16;NULL;Ensenianzas de la transitoriedad;Guia de la transitoriedad;Filosofia de la transitoriedad;NULL;NULL
+17;NULL;Ensenianzas de la elegancia;Guia de la elegancia;Filosofia de la elegancia;NULL;NULL
+18;NULL;Ensenianzas de la luz;Guia de la luz;Filosofia de la luz;NULL;NULL
+19;NULL;NULL;NULL;Pilar de basalto;NULL;Cubo Geo
+20;NULL;NULL;NULL;Semilla de fuego eterno;NULL;Regisvid Pyro
+21;NULL;NULL;NULL;Semilla de huracan;NULL;Cubo Anemo
+22;NULL;NULL;NULL;Engranaje Oni;NULL;Oni Espadachin
+23;NULL;NULL;NULL;Nucleo de escarcha;NULL;Regisvid Cryo
+24;NULL;NULL;NULL;Corazon de la eternidad;NULL;Maquinaria Eterna
+25;NULL;NULL;NULL;Rocio del rechazo;NULL;Cubo Hydro
+26;NULL;NULL;NULL;Prisma del relampago;NULL;Cubo Electro
+27;NULL;Pedacito de diamante brillante;Trozo de diamante brillante;Fragmento de diamante brillante;Diamante brillante;NULL
+28;NULL;NULL;NULL;Corazon purificador;NULL;Oceanida
+29;Cecilia;NULL;NULL;NULL;NULL;NULL
+30;Margarita voladora;NULL;NULL;NULL;NULL;NULL
+31;Semilla diente de leon;NULL;NULL;NULL;NULL;NULL
+32;Hongo marino;NULL;NULL;NULL;NULL;NULL
+33;Lirio cala;NULL;NULL;NULL;NULL;NULL
+34;Petalos de cerezo;NULL;NULL;NULL;NULL;NULL
+35;Cor Lapis;NULL;NULL;NULL;NULL;NULL
+36;Campanita de cristal;NULL;NULL;NULL;NULL;NULL
+37;Flor de seda;NULL;NULL;NULL;NULL;NULL
+38;Pergamino guia;Pergamino hechizado;Pergamino maldito;NULL;NULL;Samachurl
+39;Insignia de cuervo de bronce;Insignia de cuervo plateada;Insignia de cuervo dorada;NULL;NULL;Ladron de terosos;
+40;Guardamano viejo;Guardamano gemelo;Guardamano celebre;NULL;NULL;Nobushi y Samurai
+41;Nectar de megaflora;Nectar brillante;Nectar energetico;NULL;NULL;Megaflora
+42;Mascara daniada;Mascara sucia;Mascara amenazante;NULL;NULL;Hilichurl, Mitachurl, Samachurl y Lawachurl
+43;NULL;Dispositivo del caos;Circuito del caos;Caldera del caos;NULL;Guardian de las ruinas, Cazador de las riunas y Demoledor de las ruinas
+44;NULL;Cuerno pesado;Cuerno de bronce negro;Cuerno con cristal negro;NULL;Mitachurl y Lawachurl
+45;Flecha robusta;Flecha afilada;Flecha veterana;NULL;NULL;Hilichurl ballestero
+46;NULL;Rama seca de lineas ley;Hojas secas de lineas ley;Brotes de lineas ley;NULL;Mago del abismo 
+47;Condensado de slime;Babas de slime;Esencia de slime;NULL;Slime
+48;NULL;Engranaje del caos;Eje del caos;Ojo del caos;NULL;Centinela de las ruinas
+49;NULL;Estatuilla oscura;Estatuilla del amanecer;Estatuilla de las profundidades;NULL;Emisario del abismo, Bardo del abismo y Soldado del vacio
+50;NULL;Polen de neblina;Hierba brumosa;Estambre de hierba brumosa;NULL;Maga Cicin
