@@ -13,8 +13,8 @@ public class Artefactos {
     private String nombre;
     private String localizacion;
     private Integer codigo;
-    private Integer pasiva2;
-    private Integer pasiva4;
+    private String pasiva2;
+    private String pasiva4;
     private Double estatbase;
 
     /**
@@ -35,7 +35,7 @@ public class Artefactos {
      * @param estatbase      Estat base de cada artefacto
      * @param subestadistica Subestadisticas de los artefactos
      */
-    public Artefactos(Integer codigo, String nombre, String localizacion, Integer pasiva2, Integer pasiva4,
+    public Artefactos(Integer codigo, String nombre, String localizacion, String pasiva2, String pasiva4,
             Double estatbase) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -104,7 +104,7 @@ public class Artefactos {
      * 
      * @return Regresa la pasiva
      */
-    public Integer getPasiva2() {
+    public String getPasiva2() {
         return pasiva2;
     }
 
@@ -113,7 +113,7 @@ public class Artefactos {
      * 
      * @param pasiva2 Pasiva de 2 piezas
      */
-    public void setPasiva2(Integer pasiva2) {
+    public void setPasiva2(String pasiva2) {
         this.pasiva2 = pasiva2;
     }
 
@@ -122,7 +122,7 @@ public class Artefactos {
      * 
      * @return Regresa la pasiva
      */
-    public Integer getPasiva4() {
+    public String getPasiva4() {
         return pasiva4;
     }
 
@@ -131,7 +131,7 @@ public class Artefactos {
      * 
      * @param pasiva4 Pasiva de 4 piezas
      */
-    public void setPasiva4(Integer pasiva4) {
+    public void setPasiva4(String pasiva4) {
         this.pasiva4 = pasiva4;
     }
 
@@ -164,10 +164,8 @@ public class Artefactos {
                 linea = bdArtefactos.nextLine();
                 palabrasLinea = linea.split(";");
                 Integer id = Integer.parseInt(palabrasLinea[0]);
-                Integer pasivaDe2 = Integer.parseInt(palabrasLinea[3]);
-                Integer pasivaDe4 = Integer.parseInt(palabrasLinea[4]);
                 double statbase = Double.parseDouble(palabrasLinea[5]);
-                Artefactos datos = new Artefactos(id, palabrasLinea[1], palabrasLinea[2], pasivaDe2, pasivaDe4,
+                Artefactos datos = new Artefactos(id, palabrasLinea[1], palabrasLinea[2], palabrasLinea[3], palabrasLinea[4],
                         statbase);
                 artefacto.add(datos);
             }
