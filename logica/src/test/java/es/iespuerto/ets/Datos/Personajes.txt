@@ -1,0 +1,14 @@
+code;nom;elemento;estadisticas;p1;p2;p3;r1;r2;r3;r4
+1;Albedo;Geo;1;1;2;3;19;29;38;12
+2;Bennet;Pyro;2;4;5;6;20;30;39;11
+3;Jean;Anemo;3;7;8;9;21;31;42;11
+4;Kazuha;Anemo;4;10;11;12;22;32;39;14
+5;Kaeya;Cryo;5;13;14;15;23;33;39;12
+6;Ayaka;Cryo;6;16;17;18;24;34;40;17
+7;Ayato;Hydro;7;19;20;21;25;34;40;17
+8;Keching;Electro;8;22;23;24;26;35;41;13
+9;Qiqi;Cryo;9;25;26;27;23;36;38;13
+10;Xingqiu;Hydro;10;34;35;36;28;37;42;15
+11;Viajero;Anemo;11;28;29;NULL;27;30;42;NULL
+12;Viajero;Geo;11;30;31;NULL;27;30;42;NULL
+13;Viajero;Electro;11;32;33;NULL;27;30;42;NULL
