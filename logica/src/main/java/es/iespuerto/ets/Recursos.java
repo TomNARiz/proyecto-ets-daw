@@ -10,10 +10,9 @@ import java.util.*;
  * @author Tomas Nahuel Antela Rizzo
  */
 public class Recursos {
-    private List<Recursos> listaRecursos = new ArrayList<>();
+    List<Recursos> listaRecursos = new ArrayList<>();
     private Integer codigo;
-    private String objeto;
-    private String localizacion;
+    private String[] objeto;
     private String enemigo;
 
     /**
@@ -28,13 +27,11 @@ public class Recursos {
      * 
      * @param codigo       ID del recurso
      * @param objeto       Recurso en si mismo
-     * @param localizacion Localizacion de los enemigos
      * @param enemigo      Enemigo que puede soltar el recurso
      */
-    public Recursos(Integer codigo, String objeto, String localizacion, String enemigo) {
+    public Recursos(Integer codigo, String[] objeto, String enemigo) {
         this.codigo = codigo;
         this.objeto = objeto;
-        this.localizacion = localizacion;
         this.enemigo = enemigo;
     }
 
@@ -46,16 +43,7 @@ public class Recursos {
     public List<Recursos> getListaRecursos() {
         return listaRecursos;
     }
-
-    /**
-     * Metodo que establece una lista de recursos
-     * 
-     * @param listaRecursos Lista de recursos
-     */
-    public void setListaRecursos(List<Recursos> listaRecursos) {
-        this.listaRecursos = listaRecursos;
-    }
-
+    
     /**
      * Metodo que devuelve el codigo del recurso
      * 
@@ -75,22 +63,11 @@ public class Recursos {
     }
 
     /**
-     * Metodo constructor parametrizador para recursos que no vienen de enemigos
-     * 
-     * @param objeto       Recurso en si mismo
-     * @param localizacion Localizacion de este recurso
-     */
-    public Recursos(String objeto, String localizacion) {
-        this.objeto = objeto;
-        this.localizacion = localizacion;
-    }
-
-    /**
      * Metodo que regresa el objeto
      * 
      * @return Regresa el objeto
      */
-    public String getObjeto() {
+    public String[] getObjeto() {
         return objeto;
     }
 
@@ -99,27 +76,10 @@ public class Recursos {
      * 
      * @param objeto Recurso
      */
-    public void setObjeto(String objeto) {
+    public void setObjeto(String[] objeto) {
         this.objeto = objeto;
     }
 
-    /**
-     * Metodo que regresa la localizacion de los objetos
-     * 
-     * @return Regresa la localizacion
-     */
-    public String getLocalizacion() {
-        return localizacion;
-    }
-
-    /**
-     * Metodo que establece la localizacion de los objetos
-     * 
-     * @param localizacion Localizacion de los objetos
-     */
-    public void setLocalizacion(String localizacion) {
-        this.localizacion = localizacion;
-    }
 
     /**
      * Metodo que regresa el enemigo que suelta el objeto
@@ -145,17 +105,17 @@ public class Recursos {
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        try (Scanner bdRecursos = new Scanner(new File(""));) {
+        String archivo="/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpactWin/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Recursos.txt";
+        Scanner bdRecursos = new Scanner(new File(archivo));
             while (bdRecursos.hasNextLine()) {
                 linea = bdRecursos.nextLine();
                 palabrasLinea = linea.split(";");
                 Integer id = Integer.parseInt(palabrasLinea[0]);
-                Recursos datos = new Recursos(id, palabrasLinea[1], palabrasLinea[2], palabrasLinea[3]);
+                String[] objetos={palabrasLinea[1], palabrasLinea[2], palabrasLinea[3],palabrasLinea[4], palabrasLinea[5]};
+                Recursos datos = new Recursos(id, objetos, palabrasLinea[6]);
                 listaRecursos.add(datos);
             }
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+            bdRecursos.close();
 
     }
 }
