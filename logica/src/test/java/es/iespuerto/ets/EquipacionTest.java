@@ -15,7 +15,7 @@ public class EquipacionTest {
 
     @BeforeEach
     public void beforeEach() throws FileNotFoundException{
-        artefacto=new Artefactos(1,"Ritual Antiguo de la Nobleza","Mazmorra Abisal","Danio de Habilidad Definitiva +20%,Despues de lanzar una habilidad Definitiva", "aumenta el ATQ de todo el equipo en un 20% durante 12s. Este efecto no puede acumularse",64.8);
+        artefacto=new Artefactos(1,"Ritual Antiguo de la Nobleza","Mazmorra Abisal","Danio de Habilidad Definitiva +20%,Despues de lanzar una habilidad Definitiva", "aumenta el ATQ de todo el equipo en un 20% durante 12s. Este efecto no puede acumularse");
         pj = new Personaje(1, "Albedo", "Geo", 1, pasivas, recursos);
         arma=new Armas(1,"Huso de Cinabrio",454,"DEF",69.0,1, testAscension);
         testeo=new Equipacion(pj, arma, artefacto);
@@ -53,8 +53,9 @@ public class EquipacionTest {
         assertEquals(arma, testeo.getArma());
     }
 
+    @Test
     void testSetArtefacto() {
-        artefacto=new Artefactos(2,"Emblema","Mazmorra Abisal", "+20% Recarga", "Bono de danio Equivalente al 25% de Recarga", 46.6);
+        artefacto=new Artefactos(2,"Emblema","Mazmorra Abisal", "+20% Recarga", "Bono de danio Equivalente al 25% de Recarga");
         testeo.setArtefactos(artefacto);
         assertEquals(artefacto, testeo.getArtefactos());
     }

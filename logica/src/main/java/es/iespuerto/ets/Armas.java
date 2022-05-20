@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @see Recursos
  */
 public class Armas {
-    private List<Armas> arma = new ArrayList<>();
+    List<Armas> arma = new ArrayList<>();
     private Integer codigo;
     private String nombre;
     private Integer atqbase;
@@ -52,6 +52,10 @@ public class Armas {
         this.subestadistica = subestadistica;
         this.pasiva = pasiva;
         this.recursosAscencion = recursosAscencion;
+    }
+
+    public List<Armas> getList(){
+        return this.arma;
     }
 
     /**
@@ -202,7 +206,8 @@ public class Armas {
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        Scanner bdArmas = new Scanner(new File(""));
+        String archivo="/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpactWin/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Armas.txt";
+        Scanner bdArmas = new Scanner(new File(archivo));
             while (bdArmas.hasNextLine()) {
                 linea = bdArmas.nextLine();
                 palabrasLinea = linea.split(";");

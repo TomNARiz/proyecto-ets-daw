@@ -1,44 +1,41 @@
 package es.iespuerto.ets;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
 import java.io.*;
-import java.util.*;
-import org.junit.jupiter.api.*;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ArmasTest {
-        Armas testeo=null;
-        Integer[] testAscension={3,43,42};
-        List<Armas> testLista2 = new ArrayList<>();
-        List<Armas> testLista1 = new ArrayList<>();
-       
+    Armas testeoVacio = null;
+    Armas testeo = null;
+    Integer[] testAscension = { 3, 43, 42 };
+
     @BeforeEach
     public void beforeEach() throws FileNotFoundException{
-        testeo=new Armas(1,"Huso de Cinabrio",454,"DEF",69.0,1, testAscension);
-        String linea;
-        String[] palabrasLinea;
-        Scanner bdArmas = new Scanner(new File("H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Armas.txt"));
-        bdArmas.nextLine();    
-        while (bdArmas.hasNextLine()) {
-                linea = bdArmas.nextLine();
-                palabrasLinea = linea.split(";");
-                Integer id = Integer.parseInt(palabrasLinea[0]);
-                Integer atq = Integer.parseInt(palabrasLinea[2]);
-                double subestat = Double.parseDouble(palabrasLinea[4]);
-                Integer pasivas = Integer.parseInt(palabrasLinea[5]);
-                Integer[] recursos ={Integer.parseInt(palabrasLinea[6]),Integer.parseInt(palabrasLinea[7]),Integer.parseInt(palabrasLinea[8])};
-                Armas datos = new Armas(id, palabrasLinea[1], atq, palabrasLinea[3], subestat, pasivas, recursos);
-                testLista1.add(datos);
-                testLista2.add(datos);
-            }
-            bdArmas.close();
-        
+        testeo = new Armas(1, "Huso de Cinabrio", 454, "DEF", 69.0, 1, testAscension);
+        testeoVacio = new Armas();
+
     }
-    
+
     @Test
-    public void testLeerDatos() {
-        assertEquals(testLista1.size(),testLista2.size());
+    void testLeerDatos() throws FileNotFoundException {
+        testeoVacio.leerDatos();
+        assertEquals(9, testeoVacio.getList().size());
+    }
+
+    @Test
+    void testPerdirRecursos() throws FileNotFoundException {
+        testeoVacio.leerDatos();
+        Integer[] recursosDevueltos = testeoVacio.perdirRecursos("Huso de Cinabrio");
+        assertEquals(recursosDevueltos, testeoVacio.arma.get(0).getrecursosAscencion());
+
+    }
+
+    @Test 
+    void testGetListaArmas() throws FileNotFoundException{
+        testeoVacio.leerDatos();
+        assertEquals(testeoVacio.arma, testeoVacio.getList());
     }
 
     @Test
@@ -74,14 +71,6 @@ public class ArmasTest {
     @Test
     void testGetrecursosAscencion() {
         assertEquals(testAscension, testeo.getrecursosAscencion());
-    }
-
-
-    @Test
-    void testPerdirRecursos() {
-       Integer[] recursosDevueltos=testeo.perdirRecursos("Huso de Cinabrio");
-        assertEquals(recursosDevueltos, testeo.getrecursosAscencion());
-
     }
 
     @Test
@@ -123,7 +112,7 @@ public class ArmasTest {
 
     @Test
     void testSetrecursosAscencion() {
-        Integer[] nuevosRecursos={2,5,12};
+        Integer[] nuevosRecursos = { 2, 5, 12 };
         testeo.setrecursosAscencion(nuevosRecursos);
         assertEquals(nuevosRecursos, testeo.getrecursosAscencion());
 

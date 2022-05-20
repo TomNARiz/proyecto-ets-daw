@@ -24,7 +24,7 @@ public class App {
         System.out.println("---------------------------");
         System.out.println("2. Equipacion de personajes");
         System.out.println("---------------------------");
-        try (Scanner teclado = new Scanner(System.in)) {
+        Scanner teclado = new Scanner(System.in); 
             Integer opcion = teclado.nextInt();
             switch (opcion) {
                 case 1:
@@ -40,21 +40,19 @@ public class App {
                     String personaje = teclado.nextLine();
                     for (int i = 0; i < listaPersonajes.personajes.size(); i++) {
                         Personaje personajeDeLaLista = listaPersonajes.personajes.get(i);
-
+                        Integer codigoPersonaje = listaPersonajes.personajes.get(i).getCodigo();
                         if (personajeDeLaLista.getNombre().equals(personaje)) {
-                            /** 
                             System.out.printf(
                                     "Nombre: %s %n Elemento: %s %n Estadísticas: %n Vida: %d %n Ataque: %d %n Defensa: %d %n Maestria Elemental: %d %n Recarga de Energia: %d %n Probabilidad de Critico: %d %n Daño Critico: %d %n Bono Elemental: %d %n",
                                     personajeDeLaLista.getNombre(), personajeDeLaLista.getElemento(),
-                                    personajeDeLaLista.getEstadisticas().getVidabase(),
-                                    personajeDeLaLista.getEstadisticas().getAtqbase(),
-                                    personajeDeLaLista.getEstadisticas().getDefbase(),
-                                    personajeDeLaLista.getEstadisticas().getMaestria(),
-                                    personajeDeLaLista.getEstadisticas().getRecarga(),
-                                    personajeDeLaLista.getEstadisticas().getProbCrit(),
-                                    personajeDeLaLista.getEstadisticas().getDnCrit(),
-                                    personajeDeLaLista.getEstadisticas().getBonoelemnt());
-                                    */
+                                    estadisticas.getEstadisticas(codigoPersonaje).getVidabase(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getAtqbase(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getDefbase(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getMaestria(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getRecarga(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getProbCrit(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getDnCrit(),
+                                    estadisticas.getEstadisticas(codigoPersonaje).getBonoelemnt());
 
                         }
 
@@ -62,7 +60,8 @@ public class App {
                     break;
                 default:
                     break;
+                
             }
+            teclado.close();
         }
     }
-}
