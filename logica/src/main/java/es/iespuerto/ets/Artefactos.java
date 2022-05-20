@@ -9,13 +9,12 @@ import java.util.*;
  * @author Victor Manuel Cabrera Abreu
  */
 public class Artefactos {
-    private List<Artefactos> artefacto = new ArrayList<>();
+    List<Artefactos> artefacto = new ArrayList<>();
     private String nombre;
     private String localizacion;
     private Integer codigo;
     private String pasiva2;
     private String pasiva4;
-    private Double estatbase;
 
     /**
      * Metodo constructor vacio
@@ -35,14 +34,17 @@ public class Artefactos {
      * @param estatbase      Estat base de cada artefacto
      * @param subestadistica Subestadisticas de los artefactos
      */
-    public Artefactos(Integer codigo, String nombre, String localizacion, String pasiva2, String pasiva4,
-            Double estatbase) {
+    public Artefactos(Integer codigo, String nombre, String localizacion, String pasiva2, String pasiva4) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.localizacion = localizacion;
         this.pasiva2 = pasiva2;
         this.pasiva4 = pasiva4;
-        this.estatbase = estatbase;
+    }
+
+
+    public List<Artefactos> getLista(){
+        return this.artefacto;
     }
 
     /**
@@ -136,43 +138,21 @@ public class Artefactos {
     }
 
     /**
-     * Metodo que regresa la estat base de los artefactos
-     * 
-     * @return Regresa la estat base
-     */
-    public Double getEstatbase() {
-        return estatbase;
-    }
-
-    /**
-     * Metodo que establece la estat base de los artefactos
-     * 
-     * @param estatbase Estat base
-     */
-    public void setEstatbase(Double estatbase) {
-        this.estatbase = estatbase;
-    }
-
-    /**
      * Metodo que lee y aniade la base de datos de armas mediante un fichero.
      */
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        try (Scanner bdArtefactos = new Scanner(new File(""));) {
+        String archivo="/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpactWin/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Artefactos.txt";
+        Scanner bdArtefactos = new Scanner(new File(archivo));
             while (bdArtefactos.hasNextLine()) {
                 linea = bdArtefactos.nextLine();
                 palabrasLinea = linea.split(";");
                 Integer id = Integer.parseInt(palabrasLinea[0]);
-                double statbase = Double.parseDouble(palabrasLinea[5]);
-                Artefactos datos = new Artefactos(id, palabrasLinea[1], palabrasLinea[2], palabrasLinea[3], palabrasLinea[4],
-                        statbase);
+                Artefactos datos = new Artefactos(id, palabrasLinea[1], palabrasLinea[2], palabrasLinea[3], palabrasLinea[4]);
                 artefacto.add(datos);
             }
-        } catch (Exception e) {
-            // TODO: handle exception
+            bdArtefactos.close();
         }
-
-    }
 
 }

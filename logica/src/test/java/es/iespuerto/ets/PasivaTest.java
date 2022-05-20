@@ -5,11 +5,13 @@ import org.junit.jupiter.api.*;
 
 public class PasivaTest {
     Pasiva tPasiva=null;
+    Pasiva vacio=null;
 
 
     @BeforeEach
     public void BeforeEach(){
         tPasiva=new Pasiva("Uno", "Dos", "Tres");
+        vacio=new Pasiva();
     }
 
     @Test

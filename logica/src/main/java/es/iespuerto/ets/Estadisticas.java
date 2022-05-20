@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Victor Manuel Cabrera Abreu
  */
 public class Estadisticas {
-    private List<Estadisticas> stats=new ArrayList<>();
+    List<Estadisticas> stats=new ArrayList<>();
     private Integer codigo;
     private Integer vidabase;
     private Integer atqbase;
@@ -69,12 +69,20 @@ public class Estadisticas {
         return aux;
     }
     /**
-     * Metodo que devuelve el codigo del recurso
+     * Metodo que devuelve el codigo de la estadistica
      * 
      * @return Codigo del recurso
      */
     public Integer getCodigo() {
         return codigo;
+    }
+
+    /**
+     * Metodo que devuelve la lista de Estadisticas
+     * @return
+     */
+    public List<Estadisticas> getList() {
+        return this.stats;
     }
 
     /**
@@ -255,7 +263,7 @@ public class Estadisticas {
         String linea;
         String[] palabrasLinea;
         Scanner bdEstadisticas = new Scanner(new File(
-                "H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Estadisticas.txt"));
+                "/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpactWin/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Estadisticas.txt"));
         bdEstadisticas.nextLine();
         while (bdEstadisticas.hasNextLine()) {
             linea = bdEstadisticas.nextLine();

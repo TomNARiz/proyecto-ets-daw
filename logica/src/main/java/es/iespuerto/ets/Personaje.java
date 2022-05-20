@@ -12,7 +12,7 @@ import java.util.*;
  * @see Recursos
  */
 public class Personaje {
-    public List<Personaje> personajes = new ArrayList<>();
+    List<Personaje> personajes = new ArrayList<>();
     private Integer codigo;
     private String nombre;
     private String elemento;
@@ -44,6 +44,11 @@ public class Personaje {
         this.estadisticas = estadisticas;
         this.pasivas = pasivas;
         this.ascension = ascension;
+    }
+
+
+    public List<Personaje> getList(){
+        return this.personajes;
     }
 
     /**
@@ -160,8 +165,10 @@ public class Personaje {
     public void leerDatos() throws FileNotFoundException {
         String linea;
         String[] palabrasLinea;
-        Scanner bdPersonajes = new Scanner(new File("H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Personajes.txt"));
-            while (bdPersonajes.hasNextLine()) {
+        String archivo="/media/daw/TOSHIBA EXT/1º DAW/Entorno Desarrollo/CalcImpactWin/proyecto-ets-daw/logica/src/test/java/es/iespuerto/ets/Datos/Personajes.txt";
+        Scanner bdPersonajes = new Scanner(new File(archivo));
+        bdPersonajes.nextLine();    
+        while (bdPersonajes.hasNextLine()) {
                 linea = bdPersonajes.nextLine();
                 palabrasLinea = linea.split(";");
                 Integer id = Integer.parseInt(palabrasLinea[0]);

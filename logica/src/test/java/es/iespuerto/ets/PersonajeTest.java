@@ -2,46 +2,32 @@ package es.iespuerto.ets;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.io.*;
-import java.util.*;
 import org.junit.jupiter.api.*;
 
 public class PersonajeTest {
     Personaje testeo = null;
+    Personaje testeoVacio = null;
     Integer[] pasivas = { 1, 2, 3 };
     Integer[] recursos = { 19, 29, 38, 12 };
-    List<Personaje> testLista2 = new ArrayList<>();
-    List<Personaje> testLista1 = new ArrayList<>();
 
     @BeforeEach
-    public void beforeEach() throws FileNotFoundException {
+    public void beforeEach() {
         testeo = new Personaje(1, "Albedo", "Geo", 1, pasivas, recursos);
-        String linea;
-        String[] palabrasLinea;
-        Scanner bdPersonajes = new Scanner(new File(
-                "H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\test\\java\\es\\iespuerto\\ets\\Datos\\Personajes.txt"));
-        bdPersonajes.nextLine();
-        while (bdPersonajes.hasNextLine()) {
-            linea = bdPersonajes.nextLine();
-            palabrasLinea = linea.split(";");
-            Integer id = Integer.parseInt(palabrasLinea[0]);
-            Integer stats = Integer.parseInt(palabrasLinea[3]);
-            Integer pasiva1 =  Integer.parseInt(palabrasLinea[4]);
-            Integer pasiva2 =   Integer.parseInt(palabrasLinea[5]);
-            Integer[] pasivas = {pasiva1,pasiva2};
-            Integer[] ascensionPj = { Integer.parseInt(palabrasLinea[7]), Integer.parseInt(palabrasLinea[8]),
-                    Integer.parseInt(palabrasLinea[9]) };
-            Personaje datos = new Personaje(id, palabrasLinea[1], palabrasLinea[2], stats, pasivas,
-                    ascensionPj);
-            testLista1.add(datos);
-            testLista2.add(datos);
-        }
-        bdPersonajes.close();
+        testeoVacio= new Personaje();
     }
 
     @Test
-    public void testLeerDatos() {
-        assertEquals(testLista1.size(), testLista2.size());
+    void testLeerDatos() throws FileNotFoundException {
+            testeoVacio.leerDatos();
+            assertEquals(13, testeoVacio.getList().size());
+        }
+
+    @Test 
+    void testGetListaArmas() throws FileNotFoundException{
+        testeoVacio.leerDatos();
+        assertEquals(testeoVacio.personajes, testeoVacio.getList());
     }
+
 
     @Test
     void testGetAscension() {

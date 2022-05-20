@@ -7,37 +7,14 @@ import org.junit.jupiter.api.*;
 
 public class EstadisticasTest {
     Estadisticas testeo = null;
+    Estadisticas testeoVacio = null;
     List<Estadisticas> testLista2 = new ArrayList<>();
     List<Estadisticas> testLista1 = new ArrayList<>();
 
     @BeforeEach
     public void beforeEach() throws FileNotFoundException  {
         testeo = new Estadisticas(1, 13226, 251, 876, 0, 100.0, 5.0, 50.0, 28.0, 1);
-        String linea;
-        String[] palabrasLinea;
-        Scanner bdEstadisticas = new Scanner(new File(
-                "H:\\1º DAW\\Entorno Desarrollo\\CalcImpactWin\\proyecto-ets-daw\\logica\\src\\main\\java\\es\\iespuerto\\ets\\Datos\\Estadisticas.txt"));
-        bdEstadisticas.nextLine();
-        while (bdEstadisticas.hasNextLine()) {
-            linea = bdEstadisticas.nextLine();
-            palabrasLinea = linea.split(";");
-            Integer id = Integer.parseInt(palabrasLinea[0]);
-            Integer vida = Integer.parseInt(palabrasLinea[1]);
-            Integer ataque = Integer.parseInt(palabrasLinea[2]);
-            Integer defensa = Integer.parseInt(palabrasLinea[3]);
-            Integer maestriaElemental = Integer.parseInt(palabrasLinea[4]);
-
-            Double recargaEnergia = Double.parseDouble(palabrasLinea[5]);
-            Double probabilidadCrit = Double.parseDouble(palabrasLinea[6]);
-            Double danioCrit = Double.parseDouble(palabrasLinea[7]);
-            Double bonoElemental = Double.parseDouble(palabrasLinea[8]);
-            Integer idPersonaje = Integer.parseInt(palabrasLinea[9]);
-            Estadisticas datos = new Estadisticas(id, vida, ataque, defensa, maestriaElemental, recargaEnergia,
-                    probabilidadCrit, danioCrit, bonoElemental, idPersonaje);
-            testLista1.add(datos);
-            testLista2.add(datos);
-        }
-        bdEstadisticas.close();
+        testeoVacio =new Estadisticas();
     }
 
     @Test
@@ -47,8 +24,15 @@ public class EstadisticasTest {
     }
 
     @Test
-    public void testLeerDatos() {
-        assertEquals(testLista1.size(),testLista2.size());
+    void testLeerDatos() throws FileNotFoundException {
+        testeoVacio.leerDatos();
+        assertEquals(11, testeoVacio.getList().size());
+    }
+
+    @Test 
+    void testGetListaArmas() throws FileNotFoundException{
+        testeoVacio.leerDatos();
+        assertEquals(testeoVacio.stats, testeoVacio.getList());
     }
 
     @Test
